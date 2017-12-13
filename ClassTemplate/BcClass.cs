@@ -9,18 +9,20 @@
  *
  *=====================================================================
 /************************************************************************************/
+
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+$if$ ($targetframeworkversion$ >= 3.5)using System.Linq;
+$endif$using System.Text;
+$if$ ($targetframeworkversion$ >= 4.5)using System.Threading.Tasks;
+$endif$
 
-namespace ClassTemplate
+namespace $rootnamespace$
 {
     /// <summary>
     /// 说明
     /// </summary>
-    public class BcClass
+    public class $safeitemrootname$
     {
     }
 }
